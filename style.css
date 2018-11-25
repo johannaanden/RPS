@@ -59,6 +59,10 @@ header {
      display: inline-block; 
  }
 
+ .option:hover {
+    cursor: pointer;
+}
+
  .img {
     border-radius: 50%;
 }
