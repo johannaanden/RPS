@@ -58,6 +58,7 @@ header {
      margin: 0 20px; 
      display: inline-block; 
      text-align: center;
+     border-radius: 50%;
  }
 
  .option:hover {
