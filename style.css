@@ -69,7 +69,6 @@ header {
 }
 
 #start-message {
-    text-align: center;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -77,7 +76,6 @@ header {
 }
 
 a:link, a:visited, a:hover, a:active {
-    text-align: center;
     color: white;
     font-weight: bold;
     font-size: 20px;
