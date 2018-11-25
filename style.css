@@ -16,3 +16,16 @@ header {
     color: #24272E; 
     text-align: center; 
 }
+
+.score-board {
+    margin: 20px auto; 
+    border: 3px solid white; 
+    border-radius: 4px; 
+    text-align: center;
+    width: 200px; 
+    color: white; 
+    font-size: 46px; 
+    padding: 15px 20px; 
+    position: relative; 
+    background-color: black
+}
