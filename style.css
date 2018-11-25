@@ -40,3 +40,10 @@ header {
     left: -1px;
     right: -1px;
 }
+
+.result {
+    font-size: 40px; 
+    color: white; 
+    text-align: center; 
+    font-weight: bold; 
+}
