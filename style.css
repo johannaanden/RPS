@@ -66,3 +66,10 @@ header {
  .img {
     border-radius: 50%;
 }
+
+#start-message {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
