@@ -127,3 +127,10 @@ a:link, a:visited, a:hover, a:active {
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4);
   }
+
+  #rules-button {
+    border: 0;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+  }
