@@ -44,7 +44,7 @@ function lose(userOption, computerOption) {
     setTimeout(() => userOption_div.classList.remove('red-glow'), 1000);
 }
 
-function draw(userOption, computerOption) {
+function draw(userOption) {
     const userOption_div = document.getElementById(userOption);
     result_p.innerHTML = `It's a draw! 🙀`;
     userOption_div.classList.add('gray-glow');
