@@ -5,3 +5,7 @@ const span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
     rules.style.display = "block";
 }
+
+span.onclick = function() {
+    rules.style.display = "none";
+}
