@@ -14,6 +14,27 @@ function getComputerOption() {
     return options[randomNumber];
 }
 
+function game(userOption) {
+    const computerOption = getComputerOption();
+    switch (userOption + computerOption) {
+        case "rockscissor":
+        case "paperrock":
+        case "scissorpaper":
+            win(userOption, computerOption);
+            break;
+        case "rockpaper":
+        case "paperscissor":
+        case "scissorrock":
+            lose(userOption, computerOption);
+            break;
+        case "rockrock":
+        case "paperpaper":
+        case "scissorscissor":
+            draw(userOption, computerOption);
+            break;
+    }
+}
+
 function main() {
     rock_div.addEventListener('click', () => game("rock"));
     paper_div.addEventListener('click', () => game("paper"));
