@@ -9,3 +9,9 @@ btn.onclick = function() {
 span.onclick = function() {
     rules.style.display = "none";
 }
+
+window.onclick = function(event) {
+    if (event.target == rules) {
+        rules.style.display = "none";
+    }
+}
