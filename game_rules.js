@@ -1,0 +1,1 @@
+const rules = document.getElementById('rps-game-rules');
