@@ -32,6 +32,18 @@ function win(userOption, computerOption) {
     setTimeout(() =>  userOption_div.classList.remove('green-glow'), 1000);
 }
 
+function lose(userOption, computerOption) {
+    const smallUserWord = "You picked ";
+    const smallComputerWord = " that computer picked";
+    const userOption_div = document.getElementById(userOption);
+    computerScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = `You lost! 😭 ${smallUserWord} ${gameOption(userOption)} that loses to ${gameOption(computerOption)}${smallComputerWord}.`;
+    userOption_div.classList.add('red-glow');
+    setTimeout(() => userOption_div.classList.remove('red-glow'), 1000);
+}
+
 function game(userOption) {
     const computerOption = getComputerOption();
     switch (userOption + computerOption) {
