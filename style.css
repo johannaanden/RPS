@@ -145,3 +145,10 @@ a:link, a:visited, a:hover, a:active {
     height: 50%;
     overflow: scroll;
   }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
