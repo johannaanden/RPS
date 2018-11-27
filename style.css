@@ -105,3 +105,11 @@ a:link, a:visited, a:hover, a:active {
     width: 15%;
     position: relative; 
 }
+
+a:link, a:visited, a:hover, a:active {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
