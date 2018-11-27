@@ -14,6 +14,12 @@ function getComputerOption() {
     return options[randomNumber];
 }
 
+function gameOption(select) {
+    if (select === "rock") return "Rock";
+    if (select === "paper") return "Paper";
+    return "Scissors";
+}
+
 function game(userOption) {
     const computerOption = getComputerOption();
     switch (userOption + computerOption) {
