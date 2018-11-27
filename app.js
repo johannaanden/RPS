@@ -13,3 +13,5 @@ function main() {
     paper_div.addEventListener('click', () => game("paper"));
     scissors_div.addEventListener('click', () => game("scissor"));
 }
+
+main();
