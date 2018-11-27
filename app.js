@@ -20,6 +20,18 @@ function gameOption(select) {
     return "Scissors";
 }
 
+function win(userOption, computerOption) {
+    const smallUserWord = "You picked ";
+    const smallComputerWord = " that computer picked";
+    const userOption_div = document.getElementById(userOption);
+    userScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = `You win! 🏆 ${smallUserWord} ${gameOption(userOption)} that beats ${gameOption(computerOption)}${smallComputerWord}.`;
+    userOption_div.classList.add('green-glow');
+    setTimeout(() =>  userOption_div.classList.remove('green-glow'), 1000);
+}
+
 function game(userOption) {
     const computerOption = getComputerOption();
     switch (userOption + computerOption) {
