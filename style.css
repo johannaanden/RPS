@@ -134,3 +134,14 @@ a:link, a:visited, a:hover, a:active {
     background-color: black;
     color: white;
   }
+
+  .game-rules-content {
+    background-color: #fefefe;
+    color: black;
+    margin: auto;
+    padding: 20px;
+    border: 10px solid black;
+    width: 30%;
+    height: 50%;
+    overflow: scroll;
+  }
