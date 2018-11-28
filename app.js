@@ -13,12 +13,6 @@ function getComputerOption() {
     return options[randomNumber];
 }
 
-function gameOption(select) {
-    if (select === "rock") return "Rock";
-    if (select === "paper") return "Paper";
-    return "Scissors";
-}
-
 function win(userOption, computerOption) {
     const smallUserWord = "You picked ";
     const smallComputerWord = " that computer picked";
@@ -26,7 +20,7 @@ function win(userOption, computerOption) {
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = `You win! 🏆 ${smallUserWord} ${gameOption(userOption)} that beats ${gameOption(computerOption)}${smallComputerWord}.`;
+    result_p.innerHTML = `You win! 🏆 ${smallUserWord} ${userOption} that beats ${computerOption}${smallComputerWord}.`;
     userOption_div.classList.add('green-glow');
     setTimeout(() =>  userOption_div.classList.remove('green-glow'), 1000);
 }
@@ -38,7 +32,7 @@ function lose(userOption, computerOption) {
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = `You lost! 😭 ${smallUserWord} ${gameOption(userOption)} that loses to ${gameOption(computerOption)}${smallComputerWord}.`;
+    result_p.innerHTML = `You lost! 😭 ${smallUserWord} ${userOption} that loses to ${computerOption}${smallComputerWord}.`;
     userOption_div.classList.add('red-glow');
     setTimeout(() => userOption_div.classList.remove('red-glow'), 1000);
 }
