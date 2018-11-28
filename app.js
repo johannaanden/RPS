@@ -15,24 +15,24 @@ function getComputerOption() {
 
 function win(userOption, computerOption) {
     const userWord = "You picked ";
-    const ComputerWord = " that computer picked";
+    const computerWord = " that computer picked";
     const userOption_div = document.getElementById(userOption);
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = `You win! 🏆 ${userWord} ${userOption} that beats ${computerOption}${ComputerWord}.`;
+    result_p.innerHTML = `You win! 🏆 ${userWord} ${userOption} that beats ${computerOption}${computerWord}.`;
     userOption_div.classList.add('green-glow');
     setTimeout(() =>  userOption_div.classList.remove('green-glow'), 1000);
 }
 
 function lose(userOption, computerOption) {
     const userWord = "You picked ";
-    const ComputerWord = " that computer picked";
+    const computerWord = " that computer picked";
     const userOption_div = document.getElementById(userOption);
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = `You lost! 😭 ${userWord} ${userOption} that loses to ${computerOption}${ComputerWord}.`;
+    result_p.innerHTML = `You lost! 😭 ${userWord} ${userOption} that loses to ${computerOption}${computerWord}.`;
     userOption_div.classList.add('red-glow');
     setTimeout(() => userOption_div.classList.remove('red-glow'), 1000);
 }
