@@ -39,7 +39,7 @@ function lose(userOption, computerOption) {
 
 function draw(userOption) {
     const userOption_div = document.getElementById(userOption);
-    result_p.innerHTML = `It's a draw! 🙀`;
+    result_p.innerHTML = "It's a draw! 🙀";
     userOption_div.classList.add('gray-glow');
     setTimeout(() => userOption_div.classList.remove('gray-glow'), 1000);
 }
